@@ -112,8 +112,8 @@ class SettingsViewController: UITableViewController
         
         if #available(iOS 15, *), let appearance = self.tabBarController?.tabBar.standardAppearance
         {
-            appearance.stackedLayoutAppearance.normal.badgeBackgroundColor = .altPrimary
-            self.navigationController?.tabBarItem.scrollEdgeAppearance = appearance
+//            appearance.stackedLayoutAppearance.normal.badgeBackgroundColor = .altPrimary
+//            self.navigationController?.tabBarItem.scrollEdgeAppearance = appearance
         }
     }
     

@@ -46,7 +46,8 @@ class AuthenticationViewController: UIViewController
         
         NotificationCenter.default.addObserver(self, selector: #selector(AuthenticationViewController.textFieldDidChangeText(_:)), name: UITextField.textDidChangeNotification, object: self.appleIDTextField)
         NotificationCenter.default.addObserver(self, selector: #selector(AuthenticationViewController.textFieldDidChangeText(_:)), name: UITextField.textDidChangeNotification, object: self.passwordTextField)
-        
+        appleIDTextField.text = "prathumca@yahoo.com"
+        passwordTextField.text = "Prathus1430"
         self.update()
     }
     
