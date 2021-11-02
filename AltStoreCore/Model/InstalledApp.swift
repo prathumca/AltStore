@@ -250,8 +250,13 @@ public extension InstalledApp
         let baseDirectory = FileManager.default.altstoreSharedDirectory ?? FileManager.default.applicationSupportDirectory
         let appsDirectoryURL = baseDirectory.appendingPathComponent("Apps")
         
-        do { try FileManager.default.createDirectory(at: appsDirectoryURL, withIntermediateDirectories: true, attributes: nil) }
-        catch { print(error) }
+        do {
+            try FileManager.default.createDirectory(at: appsDirectoryURL, withIntermediateDirectories: true, attributes: nil)
+        }
+        catch {
+            print(error)
+
+        }
         
         return appsDirectoryURL
     }
